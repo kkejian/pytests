@@ -9,7 +9,7 @@ def timetotal(func, *args, _rep=1000, **kargs):
 res = timetotal(math.sqrt, 9345)
 print(list(res))
 
-#def timebest(func, *args, _rep=5, **kargs):
-    #best = 
+def timebest(func, *args, _rep=5, **kargs):
+    best = 
 
 
