@@ -17,7 +17,7 @@ def timetotal(func, *args, _rep=1000, **kargs):
 #    return (best, ret)
     
 def timebesttotal(func, *args, _reppr=10000, _rounds=10, **kargs):
-    return min([timetotal(func, *args, _rep=_reppr  **kargs) for i in range(_rounds)])
+    return min([timetotal(func, *args, _rep=_reppr, **kargs) for i in range(_rounds)])
 
 res = timebesttotal(math.sqrt, 9345)
 print(list(res))
