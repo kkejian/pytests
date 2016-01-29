@@ -1,11 +1,16 @@
-def prime(p):
-    if p <= 1:
-        print('Only numbers larger than 1 are consideres to be prime.')
+def prime(x):
+    if x <= 1:
+        print('Only numbers larger than 1 are considered to be prime.')
         return False
     else:
-        for i in range(2,y//2):
-            if y%i == 0:
-                print(y, ' has factor ', i,'.')
+        for i in range(2,int(x//2)):
+            if x%i == 0:
+                print(x, 'has factor', i,'.')
                 return i
-        print(y, 'is prime.')
+        print(x, 'is prime.')
         return 1
+
+prime(8)
+prime(3)
+prime(13.0)
+prime(-5)
