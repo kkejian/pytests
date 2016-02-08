@@ -21,4 +21,8 @@ def timebesttotal(func, *args, _reppr=10000, _rounds=10, **kargs):
 
 res = timebesttotal(math.sqrt, 9345)
 print(list(res))
+res2 = timebesttotal(pow, 9345, .5)
+print(list(res2))
+res3 = timebesttotal(lambda x: x ** 0.5, 9345)
+print(list(res3))
 
