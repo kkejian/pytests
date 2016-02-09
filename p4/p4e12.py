@@ -29,4 +29,8 @@ def facLib(n):
 #print(facLib(1))
 
 import timeit
-min(timeit.repeat(stmt="[facRec(n) for n in range(100)]", number = 1000, repeat = 5))
+#min(timeit.repeat(stmt="[facRec(n) for n in range(100)]", number = 1000, repeat = 5))
+print(min(timeit.repeat('[facRec(i) for i in range(100)]', number = 1000, repeat =5, globals=globals())))
+print(min(timeit.repeat('[facRed(i) for i in range(100)]', number = 1000, repeat =5, globals=globals())))
+print(min(timeit.repeat('[facLoop(i) for i in range(100)]', number = 1000, repeat =5, globals=globals())))
+print(min(timeit.repeat('[facLib(i) for i in range(100)]', number = 1000, repeat =5, globals=globals())))
